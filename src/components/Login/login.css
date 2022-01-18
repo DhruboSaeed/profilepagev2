@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+.errorText{
+    color: red;
+    text-align: start;
+    margin-top: 5px;
+}
+
+.linkedin-logo {
+  display: block;
+  margin: 32px 0 0 56px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-layout {
+  width: 352px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  padding: 24px;
+  border-radius: 8px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.logo-class {
+  float: left;
+}
+
+.header-content-heading {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 0 0 4px 0;
+}
+
+.header-content-sub-heading {
+  font-size: 14px;
+  line-height: 1.42857;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.header-content {
+  text-align: start;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  margin-top: 24px;
+}
+
+.your-input input {
+  width: 100%;
+  height: 52px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  transition: 0.2s;
+  font-size: 18px;
+  line-height: 1.33333;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 28px 12px 6px;
+  border-radius: 4px !important;
+}
+
+.your-input label {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  font-size: 18px;
+  color: #666666;
+  transition: 0.2s;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label {
+  top: 10%;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.input input:focus {
+  border-width: 2px;
+  border-color: #0a66c3;
+}
+
+.forgot-password {
+  left: -8px;
+  margin-top: 15px;
+  text-align: start;
+}
+
+.forgot-password-link {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0a66c3;
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.forgot-password-link:hover {
+  background: #d0e8ff;
+  text-decoration: underline;
+}
+
+.button-1 {
+  height: 52px;
+  line-height: 52px;
+  background: #0a66c3;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.button-1:hover {
+  background: #004080;
+  cursor: pointer;
+}
+
+.button-alternative {
+  background-color: #fff;
+  height: 52px;
+  line-height: 52px;
+  outline: none;
+  border: 1px solid #666666;
+  border-radius: 30px;
+  color: #676767;
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.button-alternative:hover {
+  border: 1px solid #616161;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.or-login-button {
+  display: flex;
+  align-items: center;
+}
+
+.or-login-button-text {
+  margin-left: 5px;
+}
+
+.signup-button {
+  display: flex;
+  flex-direction: row;
+  padding-top: 24px;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  margin-top: 12px;
+}
+
+.or-text {
+  font-size: 14px;
+  line-height: 1.42857;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.join-now {
+  text-align: center;
+  margin: 32px 0 0;
+}
+
+.join-now > h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.join-now span {
+  right: 4px;
+  bottom: 2px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0a66c3;
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.join-now span:hover {
+  cursor: pointer;
+  background: #d0e8ff;
+  text-decoration: underline;
+}
+
+.sign-otp {
+  display: flex;
+  flex: 1;
+  margin-top: 16px;
+}
+
+.sign-apple {
+  display: flex;
+  flex: 1;
+  margin-top: 16px;
+}
+
+.footer-base {
+  width: 100%;
+  min-height: 70px;
+}
+
+.footer_base_wrapper {
+  display: flex;
+  width: 80%;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 1.33333;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 0 8px 0 0;
+}
+
+.footer_nav_list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav_list_a_tag {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.33333;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.nav_list_a_tag:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 250px) and (max-width: 770px) {
+  .card-layout {
+    box-shadow: unset;
+    border: none;
+    padding: 0 32px;
+    margin: unset;
+  }
+
+  .linkedin-logo {
+    display: block;
+    margin: 32px 32px 16px;
+  }
+
+  .main-content {
+    justify-content: unset;
+    margin: unset;
+    align-items: center;
+  }
+
+  .footer-base {
+    display: none;
+  }
+}
